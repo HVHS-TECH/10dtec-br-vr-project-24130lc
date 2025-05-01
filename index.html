@@ -8,15 +8,30 @@
   </head>
     <body>
     <a-scene>
-      <a-sky color="lightblue"></a-sky>
+      <a-sky color="skyblue"></a-sky>
       sriuhie
        <!-- Put this inside the <a-scene> -->
       <a-entity 
-      ply-model="src:room.ply"
-      position="0 1 -2"
-      rotation="-90 0 90"
+      ply-model="src:cool.ply"
+      position="0 -2 10"
+      rotation="270 0 0"
       ></a-entity>
-                 
+      <a-entity
+      ply-model="src:Voxel Dog.ply"
+      position="-0.5 5 3"
+      rotation="270 0 0"
+      animation="
+      property: rotation;
+      from: 0.5 -1.9 3;
+      to: 0.5 1.9 3;
+      loop: true;
+      dir: alternate;
+      dur: 2;
+      
+      "
+
+      ></a-entity>
+                
     </a-scene>
   </body>
 </html>
